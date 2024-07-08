@@ -1,0 +1,13 @@
+[package]
+name = "traceroute-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.7", features = ["derive"] }
+env_logger = "0.11.3"
+log = "0.4.22"
+mio = { version = "1.0.0", features = ["os-poll", "net", "os-ext"] }
+rand = "0.8.5"
+socket2 = {version = "0.5.7", features = ["all"]}
+tokio = { version = "1.38.0", features = ["full"] }
