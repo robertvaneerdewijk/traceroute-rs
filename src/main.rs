@@ -20,7 +20,7 @@ struct Cli {
 }
 
 #[tokio::main]
-async fn main() -> tokio::io::Result<()> {
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
     env_logger::init();
     let args = Cli::parse();
     let remote_ip = args.host;
